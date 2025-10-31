@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: church-fathers-backend
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_APP=run.py
+      - FLASK_ENV=production
+      - BIBLE_API_BASE_URL=https://bible.helloao.org/api
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+    networks:
+      - church-fathers-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: church-fathers-frontend
+    ports:
+      - "5173:80"
+    environment:
+      - VITE_API_URL=http://localhost:5001
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - church-fathers-network
+
+networks:
+  church-fathers-network:
+    driver: bridge
