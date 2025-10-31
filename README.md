@@ -251,13 +251,11 @@ common_books = ['MAT', 'MRK', 'LUK', 'JHN', ...]
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-[Your chosen license]
 
 ## 🙏 Acknowledgments
 
-- Greek Bible text provided by [bible.helloao.org](https://bible.helloao.org)
+- Church Fathers text provided by [jtauber link](https://jtauber.github.io/apostolic-fathers/)
+- Greek Bible text API provided by [bible.helloao.org](https://bible.helloao.org)
 - SBL Greek New Testament text
 
 ## 📞 Support
