@@ -27,8 +27,8 @@ This tool helps scholars and researchers automatically detect New Testament cita
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.12+
-- Node.js 18+
+- ![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
+- ![React](https://img.shields.io/badge/react-18.0+-blue.svg)
 - npm or yarn
 
 ### Installation
@@ -250,6 +250,10 @@ common_books = ['MAT', 'MRK', 'LUK', 'JHN', ...]
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## :briefcase: License
+
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 
 ## 🙏 Acknowledgments
